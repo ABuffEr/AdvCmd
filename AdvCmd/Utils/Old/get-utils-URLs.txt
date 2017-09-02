@@ -1,0 +1,5 @@
+Wget https://eternallybored.org/misc/wget/releases/wget-1.18-win32.zip
+CopyPath http://www.byalexv.com/CopyPath.zip
+Junction https://download.sysinternals.com/files/Junction.zip
+Ahk2Exe https://www.autohotkey.com/download/ahk2exe.zip
+SQLite-Tools https://sqlite.org/

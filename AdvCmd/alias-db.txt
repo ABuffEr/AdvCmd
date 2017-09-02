@@ -1,0 +1,2 @@
+dir=dir /b /o:g
+findfile=dir /b /o:g | find /i
