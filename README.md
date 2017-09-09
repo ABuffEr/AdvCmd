@@ -21,16 +21,30 @@ My personal version of an advanced command prompt on Windows
 
 ## Usage
 
-* You can open AdvCmd from context menu, menu bar and run dialog (win+r);
-* You can use ctrl+v to paste, alt+f4 and alt+x to quit, and alt+d to open a new prompt;
-* If, for example, you installed ffmpeg, and open AdvCmd on test.avi file, you can write:
-ffmpeg -i %f% %n%.mp3
+You can:
+
+open AdvCmd from context menu, menu bar and run dialog (win+r);
+
+use ctrl+v to paste, alt+f4 and alt+x to quit, and alt+d to open a new prompt;
+
+if, for example, you installed ffmpeg, and open AdvCmd on test.avi file, you can write:
+
+`ffmpeg -i %f% %n%.mp3`
+
 (note: pre-set variables is case insensitive)
-* You can define an alias for a command, for example (if you have installed git and this is in system PATH):
-alias add clone "git clone"
+
+define an alias for a command, for example (if you have installed git and this is in system PATH):
+
+`alias add clone "git clone"`
+
 and then (after AdvCmd restart), write:
-clone https://github.com/ABuffEr/AdvCmd.git
+
+`clone https://github.com/ABuffEr/AdvCmd.git`
+
 or perhaps pre-set switches for a command (already included):
-alias add dir "dir /b /o:g"
-See alias without arguments for help;
-* You can run some useful batch (located in Utils folder), such as MyIP (to get your Internet IP), Add2Run (to add voices callable from Run dialog) and HideBatch (to generate a .vbs that hides specified .bat execution).
+
+`alias add dir "dir /b /o:g"`
+
+(see alias without arguments for help);
+
+run some useful batch (located in Utils folder), such as MyIP (to get your Internet IP), Add2Run (to add voices callable from Run dialog) and HideBatch (to generate a .vbs that hides specified .bat execution).
