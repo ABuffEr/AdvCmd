@@ -1,5 +1,5 @@
 # AdvCmd
-My personal version of an advanced command prompt on Windows
+My own version of an advanced command prompt on Windows
 
 ## Advantages
 
@@ -15,7 +15,7 @@ My personal version of an advanced command prompt on Windows
 1. Clone this repository;
 2. Copy AdvCmd folder in a path without spaces on your drive, and open it;
 3. Run AdvCmd_shell_register.bat as administrator;
-4. Optionally, run also SetMatrixStyle.bat;
+4. Optionally, run also SetMatrixStyle.bat (note: prompt will be colored anyway, but less fine, see source comment);
 5. Open AdvCmd.exe properties and enable execution as administrator in Compatibility tab.
 
 
@@ -41,10 +41,12 @@ and then (after AdvCmd restart), write:
 
 `clone https://github.com/ABuffEr/AdvCmd.git`
 
-or perhaps pre-set switches for a command (already included):
+or perhaps pre-set switches for a command (examples already included):
 
 `alias add dir "dir /b /o:g"`
 
+`alias add ffmpeg "ffmpeg -hide_banner"`
+
 (see alias without arguments for help);
 
-run some useful batch (located in Utils folder), such as MyIP (to get your Internet IP), Add2Run (to add voices callable from Run dialog) and HideBatch (to generate a .vbs that hides specified .bat execution).
+run some useful batch (located in Utils folder), such as MyIP (to get your Internet IP), Add2Run (to add voices callable from Run dialog), choco-install and choco-packages (to install and query Chocolatey, the package manager for Windows) and HideBatch (to generate a .vbs that hides specified .bat execution).

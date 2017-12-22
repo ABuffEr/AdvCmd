@@ -1,5 +1,7 @@
 @echo off
 setlocal
+:: rem next line to avoid colored prompt
+call :checkColors %~dp0
 if noarg%* == noarg (
  cls
  title Advanced Prompt - No target
@@ -70,3 +72,10 @@ set count=0
 for /f "usebackq delims=" %%a in (`tasklist /nh /v /fi "imagename eq AdvCmd.exe" /fo csv`) do @(set /a count+=1)
 if %count% lss 2 (taskkill /f /im ShortcutsCommandPrompt.exe>nul)
 set path=%bakpath%
+goto :eof
+
+:checkColors
+set regpath=%1
+set regpath=%regpath:\=_%
+reg query HKEY_CURRENT_USER\Console\%regpath%AdvCmd.exe>nul 2>&1
+if %errorlevel% == 1 (color 02)

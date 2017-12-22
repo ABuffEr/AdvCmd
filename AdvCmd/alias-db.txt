@@ -1,2 +1,3 @@
 dir=dir /b /o:g
 findfile=dir /b /o:g | find /i
+ffmpeg=ffmpeg -hide_banner
