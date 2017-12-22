@@ -1,4 +1,5 @@
 # AdvCmd
+
 My own version of an advanced command prompt on Windows
 
 ## Advantages
@@ -25,7 +26,7 @@ You can:
 
 open AdvCmd from context menu, menu bar and run dialog (win+r);
 
-use ctrl+v to paste, alt+f4 and alt+x to quit, and alt+d to open a new prompt;
+use ctrl+v to paste, alt+f4 or alt+x to quit, and alt+d to open a new prompt;
 
 if, for example, you installed ffmpeg, and open AdvCmd on test.avi file, you can write:
 
@@ -49,4 +50,18 @@ or perhaps pre-set switches for a command (examples already included):
 
 (see alias without arguments for help);
 
-run some useful batch (located in Utils folder), such as MyIP (to get your Internet IP), Add2Run (to add voices callable from Run dialog), choco-install and choco-packages (to install and query Chocolatey, the package manager for Windows) and HideBatch (to generate a .vbs that hides specified .bat execution).
+run some useful batch (located in Utils folder), such as:
+
+* MyIP, to get your Internet IP (curl required);
+* Add2Run, to make an executable callable from Run dialog;
+* choco-install and choco-packages, to install and query Chocolatey, the package manager for Windows);
+* HideBatch (to generate a .vbs that hides specified .bat execution).
+
+
+## Security note
+
+There are two .exe files included in this package: AdvCmd and ShortcutsCommandPrompt. The first is to simplify running commands as admin, the second to provide keyboard shortcuts.
+
+Sources are in src folder, and can be compiled by yourself using [Bat to Exe Converter](http://www.f2ko.de/en/b2e.php) (setting invisible application and admin manifest) and Ahk2Exe (AutoHotkey Compiler).
+
+If your AV reports these executables as virus, well, ask it to ignore them.
