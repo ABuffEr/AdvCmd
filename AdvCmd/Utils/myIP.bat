@@ -5,4 +5,4 @@ if not %errorlevel% == 0 (
  echo Run get-utils or download it by yourself.
  goto :eof
 )
-curl ipecho.net/plain
+curl -# --retry 2 ipecho.net/plain
