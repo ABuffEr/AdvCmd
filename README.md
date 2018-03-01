@@ -13,7 +13,7 @@ My own version of an advanced command prompt on Windows
 
 ## Installation
 
-1. Clone this repository;
+1. Clone this repository or download a zip directly from [here;](https://codeload.github.com/ABuffEr/AdvCmd/zip/master)
 2. Copy AdvCmd folder in a path without spaces on your drive, and open it;
 3. Run AdvCmd_shell_register.bat as administrator;
 4. Optionally, run also SetMatrixStyle.bat (note: prompt will be colored anyway, but less fine, see source comment);
